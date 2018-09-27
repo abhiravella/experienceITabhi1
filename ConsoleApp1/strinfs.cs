@@ -42,12 +42,12 @@ namespace ConsoleApp1
             var time = userInput.Split(':');
             if (time.Length > 2 || time.Length == 0)
             {
-                Console.WriteLine("Invalid input");
+                Console.WriteLine("Invalid input. The input should ");
             }
             else
             {
                 var tempHours = 0;
-                var tempMinutes = 0s;
+                var tempMinutes = 0;
                 try
                 {
                     tempHours = Convert.ToInt32(time[0]);
@@ -63,13 +63,16 @@ namespace ConsoleApp1
                     {
                         Console.WriteLine("Valid input");
                     }
+                    else
+                    {
+                        Console.WriteLine("Invalid Hours");
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("Invalid ");
+                    Console.WriteLine("Invalid Minutes");
                 }
             }
-
         }
     }
 }

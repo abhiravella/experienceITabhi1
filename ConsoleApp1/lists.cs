@@ -77,7 +77,7 @@ namespace ConsoleApp1
             var numbers =  new List<int>();
             var count = 0;
             while (count < 5)
-            {
+            {                
                 var tempString = Console.ReadLine();
                 if(String.IsNullOrEmpty(tempString)||String.IsNullOrWhiteSpace(tempString))
                     continue;          
