@@ -85,7 +85,7 @@ namespace ConsoleApp1
             //li.numbers();
 
             strings st = new strings();
-            st.two();
+            st.three();
 
             //GameLogic game = new GameLogic();
 
@@ -95,7 +95,7 @@ namespace ConsoleApp1
             //    string compChoice = game.GetCompChoice();
             //    string userChoice = game.GetUserIn();
             //    if (userChoice == "q")
-            //    {
+            //      {
             //        break;
             //    }
             //    game.ResOutput(compChoice, game.Play(userChoice, compChoice));
