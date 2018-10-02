@@ -2,9 +2,9 @@
 
 namespace ConsoleApp1
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
 
             /*
@@ -79,13 +79,14 @@ namespace ConsoleApp1
             //Console.WriteLine(finalString);
 
             //lists li = new lists();
+            //li.ques5();
             //li.DisplayNameAttribute();
             //li.DisplayNameAttributetwo();
             //li.reversal();
             //li.numbers();
 
-            strings st = new strings();
-            st.three();
+            //strings st = new strings();
+            //st.three();
 
             //GameLogic game = new GameLogic();
 
@@ -100,7 +101,12 @@ namespace ConsoleApp1
             //    }
             //    game.ResOutput(compChoice, game.Play(userChoice, compChoice));
             //}
-
+            Worker work = new Worker();
+            Student stu = new Student();
+            work.hoursWorked = 1775.68f;
+            work.wage = 62345f;
+            var hourlyWage = work.workersWage();
+            Console.WriteLine("Hourly rate is : "+hourlyWage);
             Console.ReadKey();
         }
     }

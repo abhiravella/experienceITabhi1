@@ -97,6 +97,27 @@ namespace ConsoleApp1
                 Console.WriteLine("{0}",num);
             }
         }
+        public void ques5()
+        {
+            List<int> userInput = new List<int> { };
+            Console.WriteLine("Enter 5 numbers");
+            for (var i = 0; i < 5; i++)
+            {
+                userInput.Add(Convert.ToInt32(Console.ReadLine()));
+            }
+            for (var i = 0; i < userInput.Count; i++)
+            {
+                var temp = userInput.ElementAt(i);
+                userInput.Remove(temp);
+                if (userInput.Contains(temp))
+                {
+                    Console.WriteLine("List is not unqiue");
+                    return;
+                }
+            }
+            Console.WriteLine("List is unique");
+            return;
+        }
 
     }
 }
