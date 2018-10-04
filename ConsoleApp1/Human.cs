@@ -8,11 +8,11 @@ namespace ConsoleApp1
 {
     class Human
     {
-        string firstName;
-        string lastName;
+        public string firstName { get; set; }
+        public string lastName { get; set; }
         public Human()
         {
-            Console.WriteLine("In Human Constructor");
+            //Console.WriteLine("In Human Constructor");
         }
     }
 }
